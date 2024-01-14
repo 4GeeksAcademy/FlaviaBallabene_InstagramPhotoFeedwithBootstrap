@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Instagram Feed</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-light align-items-center">
+            <div class="col-8 d-flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                <h3>Instagram</h3>
+            </div>
+            <div class="col-4 d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-success text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom border-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control text-secondary" id="message-text">Add the caption of your post here</textarea>
+                      </div>
+                    </form>
+
+                    <div>
+                      <button type="button" class="btn btn-light border border-1 border-light-subtle rounded">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-light border border-1 border-light-subtle rounded">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                      </svg>
+                      </div>
+                      </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+                  <li><a class="dropdown-item text-danger border-top border-dark" href="#">Logout</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+
+        <ul class="nav nav-pills mb-3 justify-content-center align-items-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
+              </svg>
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+    
+        <div class="tab-content" id="pills-tabContent">
+
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+            <div class="container-fluid text-center p-0">
+              <div class="row d-flex flex-nowrap justify-items-center align-items-center">
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/643/400/400.jpg?hmac=rbPUnrQtmNcAI6-OqBxlSjHp88t4jK50ctoZqeanwRQ" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <img src="https://fastly.picsum.photos/id/522/400/400.jpg?hmac=1t1KtQINbgAMO6-r99mb0RXau9NzQuK5SltVtqh5rec" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/548/400/400.jpg?hmac=OaSyHU90agBHQ4eS12WOSVPaYFvR6UEKt1e1lbFCi9s" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid text-center p-0">
+              <div class="row d-flex flex-nowrap justify-items-center align-items-center mt-2">
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/639/400/400.jpg?hmac=c1BAaqSz1rvgpoqKeLz3M3ZStbHIHOgFfYo2i4_awYo" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <img src="https://fastly.picsum.photos/id/976/400/400.jpg?hmac=g_s35T_TghrX4yGGXuIKAToB5KyiFhajDZrGRWSlhyw" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/744/400/400.jpg?hmac=2J82-H9IdQpY6940Fkcvzr6n_bFovfAcNLtO7PwY-9Y" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid text-center p-0">
+              <div class="row d-flex flex-nowrap justify-items-center align-items-center mt-2">
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/900/400/400.jpg?hmac=BZhoEfem5d8zMcNgsCq-s25r2aUAs0T5gjBByC4L0Mc" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <img src="https://fastly.picsum.photos/id/870/400/400.jpg?hmac=S9_eo4-F-LOrfeu0nuDEsVFzwDhbYkn4irg6dSweubg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/828/400/400.jpg?hmac=7P5ugRqxoL4BmASjmziGl8b9O_ZfKBUVFbZutpg7n9I" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid text-center p-0">
+              <div class="row d-flex flex-nowrap justify-items-center align-items-center mt-2">
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/493/400/400.jpg?hmac=tYu741nniJ2UhCDTC4tJiACfmC_dHhhz4OnQ-aoG_u0" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <img src="https://fastly.picsum.photos/id/631/400/400.jpg?hmac=uwICMMUm50dJc_Tdpxo2rUohWB8Rh9PJwN6ihrICEsY" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                  <img src="https://fastly.picsum.photos/id/791/400/400.jpg?hmac=VkbCHnIaiZEAFFsfV6f0wllP1jEF9d2iLbvxzodSD9o" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <div class="row d-flex justify-content-center">
+            <div class="card p-0" style="width: 25rem;">
+              <div class="row m-0" style="width: 25rem;">
+              <p class="card-text fs-5 col-10 d-flex align-items-center m-0 p-2">My Beach day!</p>
+              <h6 class="card-text col-2 d-flex justify-content-end m-0 p-2">06/24</h6>
+              </div>
+              <img src="https://fastly.picsum.photos/id/643/400/400.jpg?hmac=rbPUnrQtmNcAI6-OqBxlSjHp88t4jK50ctoZqeanwRQ" class="card-img-top" alt="Responsive image">
+              <div class="card-body p-2">
+                <p class="card-text fw-bold m-0">204 Likes</p>
+                <p class="card-text">Surfing in USA!🏄🏻‍♀️🎶 </p>
+              </div>
+            </div>
+           </div>
+
+           <div class="row d-flex justify-content-center mt-2">
+            <div class="card p-0" style="width: 25rem;">
+              <div class="row m-0" style="width: 25rem;">
+              <p class="card-text fs-5 col-10 d-flex align-items-center m-0 p-2">Exploring Around</p>
+              <h6 class="card-text col-2 d-flex justify-content-end m-0 p-2">08/24</h6>
+              </div>
+              <img src="https://fastly.picsum.photos/id/744/400/400.jpg?hmac=2J82-H9IdQpY6940Fkcvzr6n_bFovfAcNLtO7PwY-9Y" class="card-img-top" alt="Responsive image">
+              <div class="card-body p-2">
+                <p class="card-text fw-bold m-0">254 Likes</p>
+                <p class="card-text">San Francisco is never a bad idea ✈️</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="row d-flex justify-content-center mt-2">
+            <div class="card p-0" style="width: 25rem;">
+              <div class="row m-0" style="width: 25rem;">
+              <p class="card-text fs-5 col-10 d-flex align-items-center m-0 p-2">Fireworks at night</p>
+              <h6 class="card-text col-2 d-flex justify-content-end m-0 p-2">10/24</h6>
+              </div>
+              <img src="https://fastly.picsum.photos/id/828/400/400.jpg?hmac=7P5ugRqxoL4BmASjmziGl8b9O_ZfKBUVFbZutpg7n9I" class="card-img-top" alt="Responsive image">
+              <div class="card-body p-2">
+                <p class="card-text fw-bold m-0">198 Likes</p>
+                <p class="card-text">Never seen anything like this 🎆</p>
+              </div>
+            </div>
+           </div>
+
+          </div>
+          
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> 
+</body>
+</html>
